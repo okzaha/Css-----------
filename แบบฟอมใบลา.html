@@ -6,9 +6,11 @@
   <title>มจท.10</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link href="css/bulma.css">
+  
 </head>
 
 <body>
+  <form action="">
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -20,7 +22,7 @@
       <p class="subtitle">
       <p align="center">(สําหรับนักศึกษาที่ได้ศึกษามาแล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
       </p><label for="start">เขียนที่ มหาวิทยาลัยแม่โจ้ <br>  วัน/เดือน/ปีที่กรอก:</label>
-      <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+      <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31" required>
       <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
         <label class="radio"></label>
         <input type="radio" name="answer">
@@ -30,7 +32,7 @@
           <input type="radio" name="answer">
           2
         </label>
-        <input type="number" placeholder="ปีการศึกษา" maxlength="4" > 
+        <input type="number" placeholder="ปีการศึกษา" maxlength="4" pattern="[0-9]+" maxlength="4" required> 
       </p>
    
       <p><b>เรียน</b> คณะบดีคณะ
@@ -297,7 +299,7 @@
                   <p for="start">รหัสไปรษณีย์ <input  type="text" name="fname" id="fname" required> โทรศัพท์ <input type="text" name="fname" id="fname" required> 
                   </p>
                   <tp><label for="start">วัน/เดือน/ปีที่กรอก:</label>
-                    <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31"></tp>
+                    <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31" required></tp>
                     <p></p>
                     <br>
                     <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
@@ -309,7 +311,7 @@
                         <input type="radio" name="answer">
                         2
                       </label>
-                      <input type="number" placeholder="ปีการศึกษา" maxlength="4" > 
+                      <input type="number" placeholder="ปีการศึกษา" maxlength="4" required > 
                     </p>
                  
                     <p><b>เรียน</b> คณะบดีคณะ
@@ -440,13 +442,16 @@
                         8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)<br>
                         เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
                         9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </p>
-        </form>
+                        <br>
+                        
+                        <input type="submit"  value="ตกลง">
         
         </p>
       </div>
       </p>
     </div>
   </section>
+  </form>
 </body>
 
 </html>
